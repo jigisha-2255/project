@@ -1,0 +1,19 @@
+.margin{
+    margin:0px 15px 15px 0px;
+}
+.example-header-image {
+    background-image: url('/assets/avatar.png');
+    background-size: cover;
+}
+.overflow-content{
+    overflow-y:scroll; 
+    height:66.3vh; 
+    margin-top:10px;
+}
+.mat-card{
+    border:1px solid transparent;
+    width:225px;
+}
+.mat-card:hover{
+    border:1px solid #3f51b5;
+}

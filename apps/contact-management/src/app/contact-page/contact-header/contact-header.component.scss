@@ -1,0 +1,72 @@
+.contact-header {
+    .align-center {
+        display: flex;
+        align-items: center;
+        .mat-icon{
+            padding:0 25px;
+        }
+    }
+
+    .align-right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .filter{
+        padding:0px!important;
+    }
+    // ::ng-deep{
+    //     .mat-form-field-wrapper {
+    //         padding-bottom: 0px !important;
+    //     }
+    
+    //     .mat-form-field-infix {
+    //         height: 25px;
+    //         font-size: 12px;
+    //     }
+    
+    //     .mat-form-field {
+    //         .mat-form-field-infix {
+    //             height: 6px;
+    //         }
+    //     }
+    
+    //     .mat-form-field-appearance-outline .mat-form-field-infix {
+    //         padding: .5em;
+    //     }
+    
+    //     .mat-form-field-outline-start {
+    //         border-radius: 28px 0 0 28px !important;
+    //         min-width: 28px !important;
+    //     }
+    
+    //     .mat-form-field-outline-end {
+    //         border-radius: 0 28px 28px 0 !important;
+    //     }
+    // }
+}
+::ng-deep{
+    .mat-card.contact-header{
+        padding: 0px 16px!important;
+    }
+}
+.mat-divider.mat-divider-vertical {
+    border-top: 0;
+    border-right-width: 2px;
+    border-right-style: solid;
+    height: 30px;
+}
+.mat-divider-vertical {
+    border-right-color:  rgba(247,248,249,0.8);
+}
+.icon:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}

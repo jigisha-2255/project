@@ -1,0 +1,40 @@
+.device-page{
+    padding:20px;
+    .align-end{
+        display:flex;
+        justify-content: end;
+    }
+    .margin-bottom{
+        margin-bottom:20px;
+    }
+    // ::ng-deep{
+    //     .mat-form-field-wrapper {
+    //         padding-bottom: 0px !important;
+    //     }
+    
+    //     .mat-form-field-infix {
+    //         height: 25px;
+    //         font-size: 12px;
+    //     }
+    
+    //     .mat-form-field {
+    //         .mat-form-field-infix {
+    //             height: 6px;
+    //         }
+    //     }
+    
+    //     .mat-form-field-appearance-outline .mat-form-field-infix {
+    //         padding: .5em;
+    //     }
+    
+    //     .mat-form-field-outline-start {
+    //         border-radius: 28px 0 0 28px !important;
+    //         min-width: 28px !important;
+    //     }
+    
+    //     .mat-form-field-outline-end {
+    //         border-radius: 0 28px 28px 0 !important;
+    //     }
+    // }
+}
+

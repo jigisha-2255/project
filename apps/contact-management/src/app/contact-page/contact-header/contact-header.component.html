@@ -1,0 +1,59 @@
+<mat-card class="contact-header">
+    <div fxLayout="row" fxLayout.xs="column">
+        <div fxFlex="60%" class="align-center">
+            <div class="align-center">
+                <mat-form-field [ngClass]="icon == false ? 'hide' : 'show'">
+                    <mat-label>Sort By</mat-label>
+                    <mat-select disableRipple [(ngModel)]="selectSorting" (ngModelChange)="sortingChange()">
+                        <mat-option value="Ascending">Sort By Name: A to Z</mat-option>
+                        <mat-option value="Descending">Sort By Name: Z to A</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-icon routerLink="form">add_circle</mat-icon>
+                <mat-divider vertical></mat-divider>
+                <mat-icon routerLink="">edit</mat-icon>
+                <mat-divider vertical></mat-divider>
+                <mat-icon>restart_alt</mat-icon>
+                <mat-divider vertical></mat-divider>
+
+                <mat-icon>delete</mat-icon>
+                <mat-divider vertical></mat-divider>
+                <mat-icon>download</mat-icon>
+                <mat-divider vertical></mat-divider>
+                <mat-icon>send</mat-icon>
+                <mat-divider vertical></mat-divider>
+                <button class="filter" mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon>filter_alt</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-checkbox>All</mat-checkbox>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-checkbox checked>BA</mat-checkbox>
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+
+        <div fxFlex="40%">
+            <div fxFlex="90%" class="align-right">
+                <mat-form-field appearance="standard">
+                    <mat-label>Filter</mat-label>
+                    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+                    <button mat-button matSuffix mat-icon-button>
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+
+
+            <div fxFlex="10%" class="align-right">
+                <a (mouseup)="plusClick()" (click)="icon = !icon">
+                    <mat-icon [routerLink]="[icon ? 'list' : 'card']" class="icon">{{icon ?
+                        'list' : 'grid_view'}}</mat-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</mat-card>
