@@ -1,0 +1,30 @@
+.margin{
+    margin:15px 15px 15px 15px;
+}
+.example-header-image {
+    background-image: url('/assets/avatar.png');
+    background-size: cover;
+}
+.overflow-content{
+    overflow-y:scroll; 
+    height:calc(100vh - 225px); 
+    margin-top:15px;
+}
+.mat-card{
+    border:1px solid transparent;
+    width:225px;
+    height:110px;
+}
+.mat-card:hover{
+    border:1px solid #3f51b5;
+}
+::ng-deep .mat-card-header-text {
+    // margin: 0 45px 0 16px!important;
+    width:135px;
+}
+::ng-deep ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #3f51b5 !important;
+}
+.mat-card-header .mat-card-title {
+    font-size: 18px;
+}

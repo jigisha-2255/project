@@ -1,0 +1,80 @@
+table {
+    width: 100%;
+}
+
+.margin-top{
+    margin-top:10px;
+}
+
+.shadow{
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    .mat-table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        display: table;
+        border-collapse: collapse;
+        margin: 0px;
+    }
+
+    .mat-row,
+    .mat-header-row {
+        display: table-row;
+    }
+
+    .mat-cell,
+    .mat-header-cell {
+        word-wrap: initial;
+        display: table-cell;
+        padding: 0px 5px;
+        line-break: unset;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+}
+::ng-deep ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #3f51b5 !important;
+}
+
+.mat-column-select{
+    width: 8%;
+}
+
+.mat-column-position {
+    width: 10%;
+}
+
+.mat-column-name {
+    width: 20%;
+}
+
+.mat-column-email {
+    width: 20%;
+}
+
+.mat-column-contact {
+    width: 22%;
+}
+
+.mat-column-empPosition{
+    width: 20%;
+}
+
+.mat-row:hover{
+    // background-color: rgba(247,248,249,0.8);
+    background-color:rgba(192,192,192,0.5);
+}   
+.overflow-content{
+    overflow-y:scroll; 
+    height:calc(100vh - 225px); 
+    margin-top:15px;
+}

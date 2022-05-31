@@ -1,0 +1,14 @@
+<!-- <p>{{element.name}}</p> -->
+<mat-card id="card{{cardIndex}}" class="example-card margin" (mouseover)="mouseOver(cardIndex)"
+    (mouseleave)="mouseLeave(cardIndex)">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{element.name}} {{element.position}}</mat-card-title>
+        <mat-card-subtitle>{{element.email}}</mat-card-subtitle>
+        <mat-card-subtitle>{{element.contact}}</mat-card-subtitle>
+        <mat-card-subtitle>{{element.empPosition}}</mat-card-subtitle>
+        <div *ngIf="contactHovered=='card'+cardIndex || isChecked(cardIndex)">
+            <mat-checkbox id="checkbox{{cardIndex}}" (change)="checked($event,cardIndex)"></mat-checkbox>
+        </div>
+    </mat-card-header>
+</mat-card>

@@ -1,0 +1,18 @@
+<!-- <mat-form-field>
+    <mat-label>Sort By</mat-label>
+    <mat-select disableRipple [(value)]="selected" (selectionChange)="applySort()">
+        <mat-option value="Ascending">Sort By Name: A to Z</mat-option>
+        <mat-option value="Descending">Sort By Name: Z to A</mat-option>
+    </mat-select>
+</mat-form-field> -->
+
+<div class="overflow-content mat-elevation-z8">
+    <mat-grid-list cols="4" rowHeight="170px">
+        <mat-grid-tile *ngFor="let element of setData; let i=index;">
+            <app-contact-grid-card [element]="element" [cardIndex]="i"></app-contact-grid-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+<mat-paginator class="mat-elevation-z8" #paginator [length]="dataSource?.data?.length" [pageIndex]="0" [pageSize]="10"
+    [pageSizeOptions]="[10, 20,30]" aria-label="Select page">
+</mat-paginator>

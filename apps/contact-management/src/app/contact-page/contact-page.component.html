@@ -1,0 +1,10 @@
+<div class="padding">
+    <app-contact-header (onPlusClick)="toggleStepper = !toggleStepper" (filterApplied)="FilterWord($event)"
+        (sortingApplied)="sorting($event)">
+    </app-contact-header>
+    <!-- <app-contact-sort-card></app-contact-sort-card> -->
+    <!-- <app-contact-table [ELEMENT_DATA]="ELEMENT_DATA" *ngIf="!toggleStepper">
+    </app-contact-table>
+    <app-contact-cards [ELEMENT_DATA]="ELEMENT_DATA" *ngIf="toggleStepper"></app-contact-cards> -->
+    <router-outlet></router-outlet>
+</div>
