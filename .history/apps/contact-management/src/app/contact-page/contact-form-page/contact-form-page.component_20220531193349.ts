@@ -9,7 +9,7 @@ import { ElementDataService } from 'apps/contact-management/src/app/services/ele
   styleUrls: ['./contact-form-page.component.scss']
 })
 export class ContactFormPageComponent {
-
+  [x: string]: any;
   addressForm = this.fb.group({
     name: [null, Validators.required],
     email: [null, Validators.required],
